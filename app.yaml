@@ -1,0 +1,21 @@
+runtime: php55
+threadsafe: true
+
+handlers:
+- url: /(.+\.php)$
+  script: \1
+
+- url: /
+  script: index.php
+
+- url: /api/post
+  script: /api/post.php
+
+- url: /api/get
+  script: /api/get.php
+
+- url: /api/update
+  script: /api/update.php
+
+- url: /api/delete
+  script: /api/delete.php
